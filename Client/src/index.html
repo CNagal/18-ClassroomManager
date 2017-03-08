@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Classroom Manager</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Insert Navigation Bar -->
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Classroom Manager</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a ui-sref="dashboard">Dashboard</a></li>
+      <li><a ui-sref="student.grid">Students</a></li>
+      <li><a ui-sref="project.grid">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+    <div ui-view></div>
+</div>
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<!-- end bower -->
+<!-- inject:js -->
+<script src="app/app.module.js"></script>
+<script src="app/core/assignment.factory.js"></script>
+<script src="app/core/student.factory.js"></script>
+<script src="app/core/project.factory.js"></script>
+<script src="app/dashboard/dashboard.controller.js"></script>
+<script src="app/student/student.grid.controller.js"></script>
+<script src="app/student/student.detail.controller.js"></script>
+<script src="app/project/project.grid.controller.js"></script>
+<script src="app/project/project.detail.controller.js"></script>
+<!-- end inject -->
+</body>
+
+</html>

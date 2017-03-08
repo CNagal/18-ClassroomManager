@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading" id="studentGridPanel">Students
+                <button class="btn btn-danger pull-right" ui-sref="student.detail">Add Student</button>
+                <div class="clearfix"></div>
+                <!-- Clearfix puts the element (button) within the boundaries (panel header) -->
+            </div>
+            <div class="panel-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <th>Student Name</th>
+                                </div>
+                                <div class="col-xs-7">
+                                    <th>Assignments</th>
+                                </div>
+                            </div>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="student in studentGrid.student">
+                            <td>{{student.firstName}} {{student.lastName}}</td>
+                            <td>{{student.assignments.length}}</td>
+                            <td><button class="btn btn-primary" ui-sref="student.detail({studentId: student.studentId})">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- // <td><a ui-sref="student.detail({studentId: student.studentId})" class="btn btn-xs btn-primary">Edit</a></td> -->

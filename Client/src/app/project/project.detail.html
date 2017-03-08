@@ -1,0 +1,138 @@
+<div class="container">
+    <div class="row">
+        <div class="panel panel-success">
+            <div class="panel-heading">Assign this Project</div>
+            <div class="panel-body">
+                <strong>Select a Student</strong>
+                <div class="input-group">
+                    <select ng-option="" class="form-control">
+                    </select>
+                    <span class="input-group-btn">
+					<button class="btn btn-primary">Assign</button>
+				</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-info">
+            <div class="panel-heading">Assigned To</div>
+            <div class="panel-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <div class="col-xs-6">
+                                <th>Name</th>
+                            </div>
+                            <div class="col-xs-6">
+                                <th>Grade</th>
+                            </div>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-info">
+            <div class="panel-heading">Edit Project</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <strong>Name</strong>
+                        <input class="form-control">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <strong>Description</strong>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="panel panel-success" ng-show="projectDetail.project.projectId">
+  <div class="panel-heading">
+    Assign this project
+  </div>
+  <div class="panel-body">
+    <div class="form-group">
+      <label for="">Select a Student</label>
+      <div class="input-group">
+        <select name="" id="" class="form-control" ng-options="s.studentId as s.firstName + ' ' + s.lastName for s in projectDetail.students" ng-model="projectDetail.studentId"></select>
+        <div class="input-group-btn">
+          <button ng-click="projectDetail.assignProject()" type="button" class="btn btn-primary">Assign</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="panel panel-info" ng-show="projectDetail.project.projectId">
+  <div class="panel-heading">
+    Assigned To
+  </div>
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Grade</th>
+          <th width="1%"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="assignment in projectDetail.project.assignments">
+          <td>{{assignment.student.firstName}} {{assignment.student.lastName}}</td>
+          <td>{{assignment.grade}}</td>
+          <td><button class="btn btn-xs btn-danger">x</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    Edit Project
+  </div>
+  <div class="panel-body">
+    <div class="form-group">
+      <label for="">Name</label>
+      <input type="text" class="form-control" ng-model="projectDetail.project.name">
+    </div>
+    <div class="form-group">
+      <label for="">Description</label>
+      <textarea class="form-control" ng-model="projectDetail.project.description"></textarea>
+    </div>
+  </div>
+  <div class="panel-footer clearfix">
+    <button class="btn btn-primary pull-right" ng-click="projectDetail.save()">Save</button>
+  </div>
+</div> -->
